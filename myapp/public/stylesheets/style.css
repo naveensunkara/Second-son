@@ -1,0 +1,64 @@
+@font-face{
+  font-family: "novaSoft-bold";
+  src: url('/fonts/ProximaNovaSoft-Bold.otf') format('opentype');
+}
+
+@font-face{
+  font-family: "novaSoft-regular";
+  src: url('/fonts/ProximaNovaSoft-Regular.otf') format('opentype');
+}
+
+@font-face{
+  font-family: "novaSoft-semibold";
+  src: url('/fonts/proxima-nova-soft-semibold.otf') format('opentype');
+}
+
+body {
+  font: 14px "novaSoft-regular", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+nav.navbar{
+  background: #77c9d4; /* Old browsers */
+  background: -moz-linear-gradient(left,  #77c9d4 0%, #57bc90 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #77c9d4 0%,#57bc90 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #77c9d4 0%,#57bc90 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', endColorstr='#57bc90',GradientType=1 ); /* IE6-9 */
+  box-shadow: 0px -5px 20px 0px black;
+}
+nav.navbar .navbar-brand{
+  position: absolute;
+  top: 0;
+  margin: 0;
+}
+nav.navbar .navbar-brand .logo{
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: url('/images/logo.png') center center no-repeat;
+  background-size: 100px;
+}
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
