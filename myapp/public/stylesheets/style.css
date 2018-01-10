@@ -15,6 +15,8 @@
 
 body {
   font: 14px "novaSoft-regular", Helvetica, Arial, sans-serif;
+  background: url('/images/homebg.jpg') center center no-repeat fixed;
+  background-size: cover;
 }
 
 a {
@@ -28,12 +30,20 @@ nav.navbar{
   background: linear-gradient(to right,  #77c9d4 0%,#57bc90 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', endColorstr='#57bc90',GradientType=1 ); /* IE6-9 */
   box-shadow: 0px -5px 20px 0px black;
+  font-family: "novaSoft-semibold";
+  font-size: 16px;
 }
+
+.navbar-nav{
+  text-align: center;
+}
+
 nav.navbar .navbar-brand{
   position: absolute;
-  top: 0;
   margin: 0;
+  top: -30px;
 }
+
 nav.navbar .navbar-brand .logo{
   height: 100px;
   width: 100px;
@@ -42,23 +52,50 @@ nav.navbar .navbar-brand .logo{
   background-size: 100px;
 }
 
+.nav-item:hover{
+  cursor: pointer;
+}
 
+.navbar-collapse button{
+  background-color: #ffe001;
+  color: white;
+  border-radius: 20px 0;
+  display: block;
+  margin: 0 auto;
+}
 
-// Small devices (landscape phones, 576px and up)
+.dropdown-menu{
+  background: #0000004d;
+  border: none;
+  text-align: center;
+}
+
+.dropdown-menu a {
+  color: white;
+}
+
+.dropdown-item:hover{
+  color: white;
+  background-color: #868e96;
+}
 @media (min-width: 576px) {
 
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
+  .dropdown-menu{
+    background: #77c9d4;
+    box-shadow: 0 0 14px 0 black;
+  }
 
+  .navbar-collapse button{
+    margin: 0;
+  }
 }
 
-// Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
 }
 
-// Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
 
 }
