@@ -23,6 +23,15 @@ a {
   color: #00B7FF;
 }
 
+h1{
+  color: #673AB7;
+}
+
+.btn:hover{
+  background-color: #868e96 !important;
+  color: white !important;
+}
+
 nav.navbar{
   background: #77c9d4; /* Old browsers */
   background: -moz-linear-gradient(left,  #77c9d4 0%, #57bc90 100%); /* FF3.6-15 */
@@ -58,7 +67,7 @@ nav.navbar .navbar-brand .logo{
 
 .navbar-collapse button{
   background-color: #ffe001;
-  color: white;
+  color: #673AB7;
   border-radius: 20px 0;
   display: block;
   margin: 0 auto;
@@ -78,8 +87,101 @@ nav.navbar .navbar-brand .logo{
   color: white;
   background-color: #868e96;
 }
-@media (min-width: 576px) {
 
+.carousel{
+  box-shadow: 0 0 20px 0 black;
+}
+
+.carousel-caption{
+  color: black;
+  text-shadow: 0 0 5px white;
+}
+
+.carousel-caption .btn{
+  background-color: #ffe001;
+  border: none;
+  border-radius: 20px 0;
+  box-shadow: 0px 0px 6px 0px #777777;
+  color: #3F51B5;
+  text-shadow: 0 0 transparent;
+}
+
+.carousel-caption p{
+  color: #3F51B5;
+}
+
+.service{
+  border: 1px solid black;
+  border-radius: 50% 10px;
+  box-shadow: 0 0 20px 0 black;
+  overflow: hidden;
+  min-height: 334px;
+}
+
+.serviceCaption{
+  position: relative;
+  bottom: 50%;
+  color: #795548;
+  font-family: "novaSoft-semiBold";
+  text-shadow: 0 0 4px #ffffff;
+}
+
+.serviceCaption h2{
+  transition: transform 0.3s;
+}
+
+.serviceImg{
+  filter: blur(0px);
+  transition: filter 0.3s;
+}
+
+.health .serviceImg{
+  background: url('/images/health-care.jpg');
+}
+
+.dailyCare .serviceImg{
+  background: url('/images/daily-care.jpg') right;
+  background-size: cover;
+}
+
+.leisure .serviceImg{
+  background: url('/images/leisure-care.jpg');
+}
+
+.payment .serviceImg{
+  background: url('/images/payment-care.jpg');
+}
+
+.emergency .serviceImg{
+  background: url('/images/emergency-care.jpg') center;
+}
+
+.other .serviceImg{
+  background: url('/images/other-care.jpg');
+}
+
+.service:hover .serviceCaption h2{
+  transform: scale(1.1);
+}
+
+.service:hover .serviceImg{
+  filter: blur(20px);
+}
+
+.service:hover{
+  cursor: pointer;
+}
+
+.text-center h1+p.text-justify{
+  font-size: 16px;
+  margin: 20px auto 50px;
+  max-width: 320px;
+  color: #3F51B5;
+}
+@media (min-width: 769px) {
+  .carousel-caption{
+    width: 25%;
+  }
 }
 
 @media (min-width: 1025px) {
@@ -97,5 +199,13 @@ nav.navbar .navbar-brand .logo{
 }
 
 @media (min-width: 1200px) {
+  .container.marketing{
+    max-width: 80%;
+  }
+}
 
+@media (max-width: 768px) {
+  .carousel-item img{
+    right: -212px;
+  }
 }
