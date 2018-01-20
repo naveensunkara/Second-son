@@ -95,6 +95,11 @@ nav.navbar .navbar-brand .logo{
   background-color: #868e96;
 }
 
+.banner{
+  background: url(/images/banner.png) center no-repeat fixed;
+  background-size: cover;
+}
+
 .carousel{
   box-shadow: 0 0 20px 0 black;
 }

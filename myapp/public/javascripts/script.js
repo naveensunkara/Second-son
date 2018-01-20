@@ -4,5 +4,6 @@ $(document).ready(function(){
             'left': ($('body').width()-$('.navbar-brand').outerWidth())/2+'px'
         })
     })
-    $(window).trigger('resize');    
+    $(window).trigger('resize');
+    $(".banner").css('height',window.innerHeight-$('nav.navbar').outerHeight()+'px');    
 })
